@@ -56,25 +56,25 @@ pipeline {
         // ================= BUILD IMAGES =================
 
         stage('Build Images') {
-
+ 
             when {
                 expression {
                     params.ACTION == 'BUILD_AND_DEPLOY' ||
                     params.ACTION == 'BUILD_ONLY'
                 }
             }
-
+ 
             steps {
                 script {
-
+ 
                     def services = [
                         [name: 'user-service', file: 'Dockerfile.user'],
                         [name: 'product-service', file: 'Dockerfile.product'],
                         [name: 'order-service', file: 'Dockerfile.order']
                     ]
-
+ 
                     services.each { service ->
-
+ 
                         sh """
                             docker build \
                             -f ${service.file} \
