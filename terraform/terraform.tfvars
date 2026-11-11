@@ -1,4 +1,4 @@
-aws_region   = "ap-southeast-1"
+aws_region   = "eu-north-1"
 instance_type = "c7i-flex.large"
-key_name     = "Singapore"  #Your key-pair
-admin_cidr   = "54.169.42.186/32"   #your localhost Publicip/32
+key_name     = "ms"  #Your key-pair
+admin_cidr   = "13.50.11.119/32"   #your localhost Publicip/32

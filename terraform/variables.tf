@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS deployment region"
   type        = string
-  default     = "ap-southeast-1"
+  default     = "eu-north-1"
 }
 
 variable "instance_type" {
